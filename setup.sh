@@ -444,7 +444,7 @@ if [ ! -e "$BUILDDIR/klee-uclibc" ]; then
 fi
 
 if [ ! -e "$BUILDDIR/klee" ]; then
-  git clone --depth 1 https://github.com/vigor-nf/klee.git "$BUILDDIR/klee"
+  git clone --depth 1 -b vigor-main https://github.com/zpzigi754/klee.git "$BUILDDIR/klee"
   pushd "$BUILDDIR/klee"
     rm -rf build
     mkdir build
