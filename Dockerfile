@@ -4,7 +4,6 @@ FROM ubuntu:bionic
 ARG kernel_ver
 
 # Get the kernel stuff (since Docker shares the kernel with the host)
-COPY ./usr-src/linux-headers-${kernel_ver} /usr/src/linux-headers-${kernel_ver}
 COPY ./usr-src/linux-headers-${kernel_ver}-generic /usr/src/linux-headers-${kernel_ver}-generic
 COPY ./lib-modules/${kernel_ver}-generic /lib/modules/${kernel_ver}-generic
 
