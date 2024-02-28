@@ -1,0 +1,3 @@
+(executable (name main)
+ (libraries sexplib core cil)
+ (modules main ir loop_boilerplate_gen data_spec))
