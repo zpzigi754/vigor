@@ -1,2 +1,4 @@
 (executable (name validator)
- (libraries sexplib core))
+ (libraries sexplib core)
+ (modules validator common_fspec fspec_api ir import 
+  verifier trace_prefix render verifier))
